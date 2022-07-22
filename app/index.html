@@ -9,10 +9,103 @@
 </head>
 <body>
     <header>
-      <h1 c></h1>
-      <nav></nav>
+       <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+
+          <div class="container-fluid">
+
+            <a href="#" class="navbar-brand">Cadastro</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+              <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+               <ul class="navbar-nav ">
+
+                  <li class="nav-item"> 
+
+                     <a href="#" class="nav-link active">
+                        Salvar
+                     </a>
+                  </li>
+
+                  <li class="nav-item ">
+                     <a href="#" class="nav-link active">
+                        Feedback
+                     </a> 
+                 </li>
+              </ul>
+
+
+
+            </div>
+
+          </div>
+
+
+       </nav>
+       <h1 class="text-center fw-bold mt-4">Faça seu cadastro</h1> 
+
+       <hr>
+
     </header>
 
+     <section class="col-md-6 col-sm-11 border border-secondary mx-auto p-4 mt-3 rounded">
+
+          <div class="container-fluid">
+
+               <form action="">
+                  <div class="mb-3">
+                     
+                     <label for="nome" class="form-label">Nome <span class="text-danger">*</span></label>
+                     <input type="email" class="form-control" id="nome" placeholder="Digite seu nome">
+   
+                  </div>
+
+                  <div class="mb-3">
+
+                     <label for="email">Email <span class="text-danger">*</span> </label>
+                     <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com">
+
+                  </div>
+
+                  <div class="mb-3">
+                     <label for="data">Data de Nascimento <span class="text-danger">*</span></label>
+                     <input type="date" name="data" id="data" class="form-control">
+                  </div>
+
+                  <div>
+                     <label for="" class="form-label">Sexo <span class="text-danger">*</span></label>
+                  </div>
+
+                  <div class="form-check-inline">
+                     
+                     <input type="radio" name="sexo" id="mas" class="form-check-input">
+                     <label for="mas" class="form-check-label">Masculino</label>
+
+                  </div>
+
+                  <div class="form-check-inline">
+
+                     <input type="radio" name="sexo" id="fem" class="form-check-input">
+                     <label for="fem" class="form-check-label">Feminino</label>
+
+                  </div>
+
+                  
+
+                  <div class="form-check-inline">
+                     <input type="radio" name="sexo" id="outros" class="form-check-input">
+                     <label for="outros" class="form-check-label">Outros</label>
+                  </div>
+
+               
+               </form>
+          </div>
+     </section>
 
 
 
